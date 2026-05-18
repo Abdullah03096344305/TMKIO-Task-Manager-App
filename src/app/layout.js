@@ -9,14 +9,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <body>
+    <html lang="en">
+      <body className="antialiased bg-[#121420]">
+        <ClerkProvider>
           <Providers>
             {children}
           </Providers>
-        </body>
-      </html>
-    </ClerkProvider>
+        </ClerkProvider>
+      </body>
+    </html>
   )
 }
