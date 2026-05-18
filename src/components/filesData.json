@@ -1,0 +1,51 @@
+{
+  "folders": [
+    { "name": "Documents", "count": "24 files", "color": "bg-blue-600/20 text-blue-400", "tags": ["A", "B"] },
+    { "name": "Music", "count": "102 files", "color": "bg-indigo-600/20 text-indigo-400", "tags": [] },
+    { "name": "Work Project", "count": "84 files", "color": "bg-cyan-600/20 text-cyan-400", "tags": ["A", "B"] },
+    { "name": "Personal Media", "count": "2450 files", "color": "bg-amber-600/20 text-amber-400", "tags": ["A"] },
+    { "name": "Reddingo Backup", "count": "22 files", "color": "bg-emerald-600/20 text-emerald-400", "tags": [] },
+    { "name": "Root", "count": "105 files", "color": "bg-rose-600/20 text-rose-400", "tags": ["B"] }
+  ],
+  "recentFiles": [
+    { "name": "Proposal.docx", "type": "doc", "size": "2.9 MB", "date": "Feb 25, 2022" },
+    { "name": "Background.jpg", "type": "image", "size": "3.5 MB", "date": "Feb 24, 2022" },
+    { "name": "Apex website.fig", "type": "figma", "size": "23.5 MB", "date": "Feb 22, 2022" },
+    { "name": "Illustration.ai", "type": "vector", "size": "7.2 MB", "date": "Feb 20, 2022" }
+  ],
+  "storageOverview": {
+    "available": "130GB",
+    "total": "512GB",
+    "percentageUsed": 85,
+    "categories": [
+      { "label": "Media", "size": "86 GB", "color": "bg-blue-500", "percentage": 70, "type": "image" },
+      { "label": "Photos", "size": "26 GB", "color": "bg-amber-500", "percentage": 40, "type": "doc" },
+      { "label": "Docs", "size": "10 GB", "color": "bg-rose-500", "percentage": 20, "type": "doc" },
+      { "label": "Other", "size": "18 GB", "color": "bg-cyan-500", "percentage": 30, "type": "doc" }
+    ]
+  },
+  "chartBars": [
+    { "media": 30, "photos": 45, "docs": 15 },
+    { "media": 60, "photos": 20, "docs": 40 },
+    { "media": 40, "photos": 75, "docs": 55 },
+    { "media": 70, "photos": 30, "docs": 65 },
+    { "media": 50, "photos": 40, "docs": 45 }
+  ],
+  "avatars": [
+    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&auto=format&fit=crop"
+  ],
+  "fileTypeConfigs": {
+    "doc": { "iconKey": "FileText", "color": "text-amber-500 bg-amber-500/10" },
+    "image": { "iconKey": "ImageIcon", "color": "text-cyan-500 bg-cyan-500/10" },
+    "figma": { "iconKey": "Figma", "color": "text-rose-500 bg-rose-500/10" },
+    "vector": { "iconKey": "Layers", "color": "text-amber-600 bg-amber-600/10" }
+  },
+  "chartLegends": [
+    { "label": "Media", "color": "bg-blue-500" },
+    { "label": "Photos", "color": "bg-amber-500" },
+    { "label": "Docs", "color": "bg-rose-500" }
+  ]
+}

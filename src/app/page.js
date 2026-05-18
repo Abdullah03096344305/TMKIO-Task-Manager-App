@@ -1,7 +1,6 @@
-import Image from "next/image";
+import React from 'react';
+import MainLayout from '@/components/MainLayout';
 
-export default function Home() {
-  return (
-    <div>Task Manager App</div>
-  );
+export default function RootDashboardPage() {
+  return <MainLayout />;
 }
