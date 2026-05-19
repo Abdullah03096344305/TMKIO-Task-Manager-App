@@ -88,32 +88,38 @@ const FileSystemDashboardPanel = () => {
 
   if (loading) {
     return (
-      <div className="w-full h-96 flex items-center justify-center text-slate-400 gap-2">
-        <RefreshCw className="w-4 h-4 animate-spin text-indigo-500" />
-        <span>Parsing live Supabase row schema...</span>
+      <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4">
+        <div className="rounded-3xl border border-slate-800/80 bg-slate-900/95 px-8 py-12 text-slate-300 shadow-[0_25px_75px_-45px_rgba(15,23,42,0.95)]">
+          <div className="flex items-center gap-3 text-slate-100">
+            <RefreshCw className="w-5 h-5 animate-spin text-indigo-400" />
+            <span className="text-sm font-medium">Parsing live Supabase row schema...</span>
+          </div>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-6 text-slate-200 bg-[#121420] min-h-screen rounded-2xl border border-slate-800">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-800 pb-6 mb-6">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(79,70,229,0.14),_transparent_35%),_linear-gradient(180deg,#020617_0%,#111827_55%,#0b1224_100%)] py-10">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="overflow-hidden rounded-[2rem] border border-slate-800/80 bg-slate-950/90 shadow-[0_40px_120px_-70px_rgba(15,23,42,0.95)] ring-1 ring-slate-700/60">
+          <div className="flex flex-col gap-4 border-b border-slate-800/70 bg-slate-950/95 p-8 md:p-10">
         <div>
           <h1 className="text-xl font-black text-white tracking-wide">Workspace Matrix Engine</h1>
           <p className="text-xs text-slate-400 mt-1">Mutate single-row structural JSON configurations in real time.</p>
         </div>
-        <div className="flex items-center gap-3 w-full md:w-auto">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-end w-full md:w-auto">
           <button
             type="button"
             onClick={fetchCurrentConfig}
-            className="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-400 hover:text-white transition-all border border-slate-700/50"
+            className="inline-flex items-center justify-center rounded-2xl border border-slate-700/70 bg-slate-900/95 px-4 py-2 text-slate-200 transition hover:border-indigo-500/60 hover:bg-slate-800/90"
           >
             <RefreshCw className="w-4 h-4" />
           </button>
           <button
             onClick={handleSaveChanges}
             disabled={saving}
-            className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-[#5f47ff] hover:bg-[#4c36e0] disabled:bg-indigo-800/50 text-white px-5 py-2.5 rounded-xl text-xs font-bold transition-colors shadow-lg shadow-indigo-950/40"
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-500 to-violet-500 px-5 py-2.5 text-xs font-bold uppercase tracking-[0.12em] text-white shadow-[0_18px_40px_-18px_rgba(79,70,229,0.9)] transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <Save className="w-4 h-4" />
             {saving ? 'Syncing...' : 'Save Component Modifications'}
@@ -336,6 +342,8 @@ const FileSystemDashboardPanel = () => {
           </div>
         </div>
       </form>
+        </div>
+      </div>
     </div>
   );
 };
